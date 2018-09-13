@@ -6,10 +6,14 @@ public class ClasseExterna {
   
      private class ClasseInterna{
        
-      public void imprimir(){
+     public void imprimir(){
           System.out.println("Dentro do método da inner class");
       }
        
     }
- 
+  
+    public void mostrarInnerClass(){
+      ClasseInterna ci = new ClasseInterna();
+        ci.imprimir();
+      }
 }
